@@ -1,0 +1,41 @@
+### this is root route
+GET http://localhost:9000/route
+Authorization:Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWW91ciB0cnVzdC4iLCJpc3MiOiJwaWNrZXIuY29tIiwiaWF0IjoxNjA4NTI1MjY0LCJleHAiOjE2MDg1MjUyOTksImF1ZCI6IjVmZGY2MDg4NjcwOWM0MzJjOGNhYTgyZiJ9.maHFKD22EOt0suarYFmqcvIcK6STyuBspg83UtUEA_g
+
+### register route
+POST http://localhost:9000/auth/register
+Content-Type: application/json
+
+{
+    "email":"newusers@gmail.com",
+    "password":"12345678"
+}
+
+
+### signin
+POST http://localhost:9000/auth/signin
+Content-Type: application/json
+
+{
+    "email":"sahooranjit@gmail.com",
+    "password":"12345678"
+}
+
+
+### referes token
+POST http://localhost:9000/auth/referse-token
+Content-Type: application/json
+
+{
+    "refresToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiWW91ciB0cnVzdC4iLCJpc3MiOiJwaWNrZXIuY29tIiwiaWF0IjoxNjA4NTI1MjEzLCJleHAiOjE2NDAwODI4MTMsImF1ZCI6IjVmZGY2MDg4NjcwOWM0MzJjOGNhYTgyZiJ9.oh1EMwSaoQMpMXApszKKgqriRBDZX3WdKAtOhMwB1JU"
+}
+
+
+
+### logout route
+
+DELETE http://localhost:9000/auth/logout
+Content-Type: application/json
+
+
+
